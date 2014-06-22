@@ -1,0 +1,36 @@
+<div class="cover-page">
+	<div class="inner">
+		<%= image_tag "profile.jpg", class: "profile img-circle", width:"150", height: "150" %>
+		<h2>A Brief Introduction</h2>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-3 col-lg-6 col-lg-offset-3">
+					
+					<p class="lead">Hello! My name is Fazil Azhar and I am currently studying Computer Science at the University of California, Berkeley. Click the links below if you'd like to know more about me and what I've done. </p>
+				</div>
+			</div>
+		</div>
+		<div class="info-panels container-fluid">
+			<div class="row">
+				<div class="info contact col-md-4 col-sm-4 col-xs-4 col-lg-4">
+					<h4> Contact Me </h4>
+					<p class="wordwrap"> Email me at <a href="mailto: feedback@streams.io">fazils.azhar@gmail.com</a></p>
+				</div>
+				<div class="info links col-md-4 col-sm-4 col-xs-4 col-lg-4">
+					<h4>For more info</h4>
+					<%= link_to button_tag("Projects", type: "button", class: "btn btn-custom "), projects_path %>
+					<%= link_to button_tag("Resume", type: "button", class: "btn btn-custom"), asset_path("resume.pdf"), target: "_blank" %>
+				</div>
+				<div class="info follow col-md-4 col-sm-4 col-xs-4 col-lg-4">
+					<h4>Follow Me</h4>
+					<ul class="pager">
+						<li><%= link_to image_tag("png/github3.png", height: '25px', width: '25px'), "https://github.com/fazhar", target: "_blank" %></li>
+						<li><%= link_to image_tag("png/logo.png", height: '25px', width: '25px'), "www.linkedin.com/pub/fazil-azhar/87/5a4/238/", target: "_blank" %></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+</div>

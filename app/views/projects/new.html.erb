@@ -1,0 +1,27 @@
+<div class="add-project">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+			<h4> Add a Project </h4>
+				<%= form_for :project do |f| %>
+
+					<div class="form-group">
+						<%= f.text_field :title, class: "form-control", placeholder: "Title" %>
+					</div>
+					<div class="form-group">
+						<%= f.text_area :description, class: "form-control", placeholder: "Enter a description of the project." %>
+					</div>
+					<div class="form-group">
+						<%= f.text_area :links, class: "form-control", placeholder: "Enter any links to your porject here. Seperate them with commas." %>
+					</div>
+					<div class="form-group">
+						<%= f.file_field "images[]", type: :file, multiple: :true %>
+					</div>
+				<% end %>
+				<%= form_for :image, html {multipart: true} do |f| %>
+
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>

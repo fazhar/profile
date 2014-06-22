@@ -1,0 +1,83 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.about {
+	padding-top: 25px;
+	text-align: center;
+	color: #777;
+	font-weight: 300;
+	h2, h3, h4 {
+		font-weight: 300;
+		color: #777;
+	}
+}
+
+.cover-page {
+
+	text-align: center;
+	padding-top: 10%;
+
+	.inner {
+
+		.profile {
+			border: 2px solid #1164b1;
+		}
+
+		h2, h3, h4 {
+			font-weight: 300;
+			color: #777;
+		}
+
+		h4 {
+			padding-top: 10px;
+		}
+
+
+
+		.lead {
+			font-weight: 300;
+			color: #777;
+			font-size: 16px;
+		}
+
+		.info-panels {
+			padding-top: 25px;
+			.follow {
+				.pager li > a, .pager li > span {
+					border:none;
+					background-color: inherit;
+					&:hover {
+					}
+				}
+			}
+
+			.pager li>a{
+				padding: 3px 7px;
+			}
+
+			.contact {
+				p {
+					font-weight: 300;
+					color: #777;
+				}
+			}
+
+			.links {
+				.btn-custom {
+					margin-top: 5px;
+					margin-bottom: 5px;
+					background-color: #ccc;
+					color: #777;
+
+					&:hover {
+						color: #1164b1;
+						text-decoration: none;
+						background-color: #c7c7c7;
+					}
+				}
+			}
+		}
+	}
+
+}
