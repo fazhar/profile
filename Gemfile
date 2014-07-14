@@ -31,7 +31,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 
 gem "paperclip", "~> 4.1"
-gem 'jquery-fileupload-rails'
+gem "font-awesome-sass"
+
 
 
 group :doc do
@@ -58,4 +59,3 @@ gem 'jbuilder', '~> 2.0'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-

@@ -12,156 +12,25 @@
  *
  *= require_tree .
  *= require_self
+ *= require font-awesome
  */
 
 @import "bootstrap";
 
 html {
-	overflow-y: scroll;
+	overflow-y: hidden;
 }
 
 body {
-	padding-top: 51px;
-	background-color: #e7e7e7;
+	background: url(/assets/drawingsmall.png);
+	background-position: center;
 }
 
-.navbar-custom {
-	background-color: inherit;
-	border-color: #ccc;
-	.navbar-brand {
-		color: #777;
-		&:hover, &:focus { 
-			color: #333; 
-		}
-	}
-	.navbar-text {
-		color: #777; 
-	}
-
-	.navbar-nav {
-		> li {
-			> a {
-				color: #777;
-				font-size: 13px;
-				&:hover,  &:focus {
-					color: #999; 
-				}
-			}
-		}
-		> .active {
-			> a, > a:hover, > a:focus {
-				color: #777;
-				background-color: #ccc; 
-			}
-		}
-		> .open {
-			> a, > a:hover, > a:focus {
-				color: #777;
-				background-color: #ccc; 
-			}
-		}
-	}
-	.navbar-toggle {
-		border-color: #ccc;
-		&:hover, &:focus {
-			background-color: #ccc; 
-		}
-		.icon-bar {
-			background-color: #ccc; 
-		}
-	}
-	.navbar-collapse,
-	.navbar-form {
-		border-color: #ccc; 
-	}
-	.navbar-link {
-		color: #777;
-		&:hover {
-			color: #333; 
-		}
-	}
-}
-
-@media (max-width: 767px) {
-	.navbar-default .navbar-nav .open .dropdown-menu {
-		> li > a {
-			color: #777;
-			&:hover, &:focus {
-				color: #333; 
-			}
-		}
-		> .active {
-			> a, > a:hover, > a:focus, {
-				color: white;
-				background-color: #1164b1; 
-			}
-		}
-	}
-}
-
-header {
-
-	.navbar {
-		margin-bottom: 0px;
-		li {
-			background-color: inherit;
-		}
-	}
-
-	.btn-custom {
+.navbar {
+	margin-bottom: 0px;
+	border: none !important;
+	li {
 		background-color: inherit;
-		border-radius: 0px;
-		color: white;
-		padding: 6px;
-		font-size: 12px;
-		font-weight: 300;
-		&:hover {
-			color: #e7e7e7;
-		}
-	}
-
-	.btn-image-custom{
-		background-color: inherit;
-		margin-top: 0;
-		margin-bottom: 0;
-		border-radius: 0px;
-		color: white;
-		padding: 6px;
-		font-size: 12px;
-		font-weight: 300;
-		&:hover {
-			color: #e7e7e7;
-		}
-	}
-
-}
-
-footer {
-	padding-right: 2%;
-	padding-left: 2%; 
-	margin-top: 25px;
-	padding-top: 5px;
-	border-top: 1px solid #ccc;
-	color: #777;
-	a {
-		color: #777;
-		font-size: 11px;
-		&:hover {
-			text-decoration: none;
-		  	color: #333;
-		}
-	}
-	small {
-		float: left;
-	}
-	
-	ul {
-		float: right;
-		list-style: none;
-		li {
-	  		float: left;
-	  		margin-left: 10px;
-		}
 	}
 }
 
@@ -174,4 +43,64 @@ footer {
 	white-space: -o-pre-wrap; /* Opera 7 */
 	white-space: -moz-pre-wrap; /* Mozilla */
 	word-wrap: break-word; /* IE 5+ */
-} 
+}
+
+.cover-page {
+	text-align: center;
+
+	.profile {
+		border: 2px solid #1164b1;
+	}
+
+	h2, h3, h4 {
+		font-weight: 300;
+		color: #777;
+		border-bottom: 1px solid #ccc;
+		padding-bottom: 5px;
+	}
+
+	.view {
+		font-size: 12px;
+	}
+
+	.intro {
+		background-color: #e7e7e7;
+		box-shadow: 0px 10px 5px -5px #777;
+		padding: 1px 15px 5px 15px;
+		margin: 5px;
+		.pager {
+			margin: 5px;
+			a {
+				background: inherit;
+				border: none;
+				color: #777;
+				font-size: 25px;
+				&:hover {
+					color: #428bca;
+				}
+			}
+		}
+	}
+
+	.lead {
+		font-weight: 300;
+		color: #777;
+		font-size: 16px;
+		margin-bottom: 0;
+	}
+
+	.projects {
+		padding-top: 10px;
+		padding-bottom: 15px;
+		padding: 10px 10px 0px 10px;
+		background-color: #e7e7e7;
+		height: 275px;
+		box-shadow: 0px 10px 5px -5px #777;
+		margin: 20px 0px 20px 0px;
+		.btn {
+			margin-top: 5px;
+			margin-bottom: 5px;
+			border-radius: 0;
+		}
+	}
+}
